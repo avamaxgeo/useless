@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-r+pnbabq9vkkayv))zjk!w*)z9grsq+)s0omqe_sio-sx_m7(5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# movie_backend/settings.py (or your project's settings.py)
+
+# ... (other settings) ...
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'useless-3.onrender.com'] # Add your Render.com domain here
+
+# ... (other settings) ...
 
 
 # Application definition
