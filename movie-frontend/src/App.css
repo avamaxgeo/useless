@@ -1,29 +1,95 @@
-#root {
-  background-color: #141414;
-  color: #fff;
-  min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-}
+/* src/App.css */
+
 .container {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 0;
 }
-h1 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
-.loading { font-size: 1.5rem; text-align: center; padding: 5rem; }
-.back-link { color: #aaa; text-decoration: none; display: block; margin-bottom: 1rem; }
+
+.loading {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5rem;
+  color: #a0aec0; /* Lighter gray for loading text */
+}
+
+.back-link {
+  color: #a78bfa; /* Purple back link */
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
 }
-.card { background-color: #222; border-radius: 8px; overflow: hidden; text-decoration: none; color: #fff; transition: transform 0.2s; border: 1px solid #333; }
-.card:hover { transform: scale(1.05); }
-.genre-card { padding: 2rem; text-align: center; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; }
-.movie-card img { width: 100%; display: block; aspect-ratio: 2/3; }
-.movie-card h3 { padding: 1rem; margin: 0; font-size: 1rem; }
-.detail-container { display: flex; gap: 2rem; align-items: flex-start; margin-top: 2rem; }
-.detail-container img { max-width: 400px; border-radius: 8px; }
-.detail-container .details h1 { text-align: left; margin: 0 0 1rem 0; }
-.detail-container .details p { line-height: 1.6; color: #e5e5e5; }
+
+.card {
+  background-color: #2d0a52; /* Darker purple background for cards */
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #e5e7eb; /* Light text on dark card background */
+  transition: transform 0.2s;
+  border: 1px solid #4a0f8a; /* Slightly lighter purple border */
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgba(45, 10, 82, 0.5), 0 4px 6px -2px rgba(45, 10, 82, 0.1); /* Darker purple shadow */
+}
+
+.genre-card {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* These will inherit the .card background and text colors */
+}
+
+.movie-card img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 2/3;
+}
+
+.movie-card h3 {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1rem;
+  color: #e5e7eb; /* Light text for movie titles on movie cards */
+}
+
+.detail-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.detail-container img {
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.detail-container .details h1 {
+  text-align: left;
+  margin: 0 0 1rem 0;
+  color: #e5e7eb; /* Light text */
+}
+
+.detail-container .details p {
+  line-height: 1.6;
+  color: #a0aec0; /* Lighter gray for body text */
+}
+
+.genre-button.active {
+    background-color: #6b21a8; /* Active genre button in a slightly different purple */
+    color: white;
+    border-color: #6b21a8;
+}
