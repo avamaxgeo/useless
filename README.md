@@ -47,6 +47,8 @@ cd movie-backend
 # Install required python packages
 pip install "uvicorn[standard]" fastapi
 
+#Deploy Link
+https://movie-review-3rpyk83j5-luthus-projects.vercel.app?_vercel_share=yAxnCyyuyascXk6MPO60k4AjTbzL0rUX
 
 *Run*
 
@@ -54,6 +56,7 @@ bash
 # Run the FastAPI server from the backend directory
 uvicorn main:app --reload
 ```
+
 
 -----
 
