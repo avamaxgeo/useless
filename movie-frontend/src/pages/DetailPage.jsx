@@ -6,7 +6,7 @@ function DetailPage() {
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/movie/${movieId}`)
+    fetch(`https://useless-3.onrender.com/movie/${movieId}`)
       .then(res => res.json())
       .then(data => setMovie(data));
   }, [movieId]);
