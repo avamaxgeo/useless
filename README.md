@@ -61,8 +61,7 @@ uvicorn main:app --reload
 
 #### For Software:
 
-Screenshots (Add at least 3)
-1
+https://drive.google.com/drive/folders/1ZblxqfGvxbfTF9cqcpqjL9KfApc3tZN3
 
 
 #### For Hardware:
