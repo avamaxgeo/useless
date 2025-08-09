@@ -65,6 +65,9 @@ uvicorn main:app --reload
 #### For Software:
 
 https://drive.google.com/drive/folders/1ZblxqfGvxbfTF9cqcpqjL9KfApc3tZN3
+<img width="1919" height="912" alt="Screenshot 2025-08-09 081430" src="https://github.com/user-attachments/assets/69347af6-745c-4b48-b353-368b54c8ee29" />
+<img width="1919" height="903" alt="Screenshot 2025-08-09 081444" src="https://github.com/user-attachments/assets/8c27bdab-2288-4022-a1c9-d1ab82e6def8" />
+<img width="1919" height="916" alt="Screenshot 2025-08-09 081520" src="https://github.com/user-attachments/assets/7d17a062-3ba8-4878-8ec8-09b90dd49e7c" />
 
 
 #### For Hardware:
