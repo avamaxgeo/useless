@@ -6,7 +6,7 @@ function HomePage() {
   useEffect(() => {
     // Fetches movie genres from the FastAPI backend.
     // Ensure your backend is running at http://127.0.0.1:8000
-    fetch('https://useless-3.onrender.com/genres')
+    fetch('https://useless-6.onrender.com/genres')
       .then(res => res.json())
       .then(data => setGenres(data.genres))
       .catch(error => console.error("Error fetching genres:", error)); // Basic error handling

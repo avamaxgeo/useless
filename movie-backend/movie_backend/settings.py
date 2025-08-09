@@ -29,7 +29,7 @@ DEBUG = True
 
 # ... (other settings) ...
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'useless-3.onrender.com'] # Add your Render.com domain here
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'useless-6.onrender.com'] # Add your Render.com domain here
 
 # ... (other settings) ...
 

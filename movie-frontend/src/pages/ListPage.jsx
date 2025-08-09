@@ -6,7 +6,7 @@ function ListPage() {
   const [movies, setMovies] = useState([]);
   
   useEffect(() => {
-    fetch(`https://useless-3.onrender.com/discover/${genreId}`)
+    fetch(`https://useless-6.onrender.com/discover/${genreId}`)
       .then(res => res.json())
       .then(data => setMovies(data.results));
   }, [genreId]);
