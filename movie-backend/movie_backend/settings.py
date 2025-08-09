@@ -36,6 +36,8 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'useless-3.onrender.com'] # Add your 
 
 # Application definition
 
+# movie_backend/settings.py
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,16 +45,26 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders', # Add this line
+    # 'your_app_name', # If you have a custom app, it would go here
 ]
+
+# movie_backend/settings.py
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware', # Add this line, place it high up
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+CORS_ALLOWED_ORIGINS = [
+    "https://useless-beryl.vercel.app",  # Your Vercel frontend domain
+    "http://localhost:3000",             # For local frontend development
+    "http://127.0.0.1:3000",             # For local frontend development (common)
 ]
 
 ROOT_URLCONF = 'movie_backend.urls'
